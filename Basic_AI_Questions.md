@@ -9,7 +9,7 @@ This is a compiled overview and an attempt to answer all of the quesations in th
 ## What does AI stand for? [1]
 > What	does	AI	stand	for?	Give	you	own	explanation	of	the	meaning	of	it. What is	known as Turing test?
 
-AI Stand for Artificial Intelligence.
+AI stands for [Artificial Intelligenc](https://en.wikipedia.org/wiki/Artificial_intelligence).
 
 As the name implies it's simulating, or emulating something that's intenlligent, but nessecarily isn't in reality.
 
@@ -30,7 +30,7 @@ Relating that to sowftware:
 Keystrokes, recieving network packets, cameras, bluetooth, etc. would be sensors that it can act upon by displaying content, sending network packets, writing files based on that input.
 
 It can be illustrated the following way:
-![what_is_an_agent](./what_is_an_agent.png)
+![what_is_an_agent](./img/what_is_an_agent.png)
 
 
 ## How can AI be implemented in games? [3]
@@ -58,3 +58,73 @@ Machine learning is the concepts of a machine "learning" from the input its givi
 ## Tasks solved by machine learning [6]
 >Which	are	the	basic	types	of	tasks	solved	by machine learning?	How	do	they	differ?
 
+Seeing as ML (is a branch of AI), ML can solve many tasks that AI pracially also can solve, or rather AI would solve those tasks through ML. Typically, ML is used for basic predictions based on the data the algorithms has been fed. Comon tasks include text recognition and statiscal analysis. Most of ML tasks also rely on categorical or numerical data.
+
+## Describe the process of ML [7]
+>Describe	the	process	of	machine learning.	Which	activities	would	you	plan	to	solve	a	task	
+by	implementing	machine learning methods? Draw	a	simple	sequence	diagram.
+
+<ol>
+    <li>Find a dataset</li>
+    Find a dataset that would be interesting to make predictions about. This could be about more or less anything. However, the more data that is available the higher success rate we'll eventually see.
+    <li>'Chalange' the data</li>
+    Ask questions about the data. What can this particular dataset help us answer. Which answers could be extracted from the dataset? Which hypothesis can be made?
+    <li>Preprocessing</li>
+    Preprocess the data so it fits the tasks at hand and don't have any contaminated values. Furthermore, make the data 'computer readable'.
+    <li>Analyze</li>
+    Analyze which models would be suitable to train the given data on. This might be a given earlier on in the process as many AI/ML tasks are solved in similar ways, based on the data that is being processed.
+    <li>Fit & Train</li>
+    Fit and train the selected models with the preprocessed data.
+    <li>Adjust</li>
+    Fiddle with the numbers, and model inputs, see if the results can be tweaked for the better. And if for the worse, ask questions about why? This can be taken back to the preprocessing stage, or maybe we're asking the wrong questions?
+    <li>Results</li>
+    Analyze the results, and ask critical questions about why certain results were achievede. Were the results in reality too good, and if so, ask why? 
+</ol>
+
+I've attempted to illustrate this process with a sequence diagram. That's to say, we don't nesscecarily go through all the steps in the diagram in this particular sequence. But it's ment to fit above described flow
+![ML_process](./img/ML_process.svg)
+
+## Supervised and unsupervised learning [8]
+>What	is	the	difference	between	supervised	and	unsupervised	machine learning? Give	an	
+example	from	the	everyday	life.
+
+The two terms are sort of implied, [supervised learning is learning that is being monitored, whereas unsupervised learning](https://www.youtube.com/watch?v=cfj6yaYE86U) is not.
+
+It's important to note that the data for supervised learning needs to be labeled. mainly there are two types of supervised learning: classification and regression.
+
+Unsupervised learning the data is not labeled, and we don't nessecarily know much about the data beforehand. There are generally fewer algorithms available for unsupervised learning. Clustering is commonly used.
+
+## Which data structures are used for ML? [9]
+>Which	data	structures	are	used	to	hold	the	data	needed	for	machine learning?
+
+Some comon structures include: [tuples](https://en.wikipedia.org/wiki/Tuple), [tectors](https://en.wikipedia.org/wiki/Feature_(machine_learning)) or simply put, one-dimensional [array](https://en.wikipedia.org/wiki/Array_data_structure), [matrixs](https://en.wikipedia.org/wiki/Matrix_(mathematics)), [tensors](https://en.wikipedia.org/wiki/Tensor).
+
+## What is Gaussian distribution? [10]
+>What	is	the	shape	of	Gaussian	distribution	of	a	set	of	data	values?	What	information	does	
+it	provide? Which	parameters	of	a	data	set	are	important	for	its	description?
+
+[The Gaussian distribution](https://www.youtube.com/watch?v=rzFX5NWojp0), also refered to as '[normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)' and 'the bell curve'. As implied by its alternate names the shape of the gaussian distribution is a bell. On the y-axsis the frequency of something represented, in other words, the farther up on the y-axsis, the more frequently that datapoint appears. On the x-axsis the outliers of the dataset are clearly represented. The lowest value is represented (0,0), whilst the average value will be dead-center on the x-axis (.5, x) and the highest value at the end of the x-axis (1, 0). The width of the curve is define by the [standard deviation](https://en.wikipedia.org/wiki/Standard_deviation).
+
+In order to draw a normal distribution the following data is needed:
+<ol>
+    <li>The average measurement</li>
+    <li>The standard deviation of the measurement</li>
+</ol>
+
+![Normal distribution](./img/Normal_Distribution.svg)
+
+## In ML what is a feature and a label [11]
+>In	machine learning what	is	a	feature	and	what	is	a	label?	Illustrate	with	appropriate	example
+
+Labels can be described as something that categories data.
+Features as the name implies, is features of said data.
+In combinations [features of some data is how we determine to label data](https://www.youtube.com/watch?v=rnv0-lG9yKU).
+
+An example: A movie with genre g, and run time r, actors a1, a2, a3, a4, a5 and so on, can be labeled as something I personally like or dislike based on the given features (g, r, a1 and so on).
+
+## Lack of data [12]
+>How	would	you	proceed,	if	you	do	not	have	sufficient	data	for	building	a	reliable	model?
+
+There are quite a few options:
+One could look for a new and more sufficient dataset.
+It would also be possible to generate more 'fake' data yourself, there are algorithms available to do so.
