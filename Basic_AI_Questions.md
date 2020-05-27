@@ -143,18 +143,45 @@ We can use it in AI/ML to indicate whether a dataset is suitable to an algorithm
 If you were to train an AI to predict the genre of a movie based on the summery, and your dataset consist 70% of action movies and the remaining 30% is scattered out on 13 different genres. The AI has a Bias towards action movies, due to the lack of variation. Like wise if our dataset is balanced but we only had 5 genres, odds are we are gonna run into words in summeries that our AI dont know.
 
 ## What is the difference between a method and a model? [15]
-
-
-
+A method is a catagory of models.
+Regression is a method, and within regression we have different methods(algorithms) to get our output.
+So we could say our method is clustering and our model is k-means
 
 
 ## Which machine learning libraries and frameworks are you familiar with and which functions do they provide? [16]
-
+scikit-learn. Scikit provides us with a wide range of methods and models as well as sample training sets, so we dont have to provide our own to see how a model works.
 
 
 
 ## Compare classification and regression, give examples of appropiate cases for both [17]
 
+### Classification
+We use classification when our task is to predict something belonging to a catagory, we use it to draw a conclusion from observed values. such as weather the observed data belongs to a bottle of beer or a of wine.
+
+### Regression
+We use regression when we want to output a continues value, such as salary or parking spot usage. typically the output of regression is a numeric value indicating a value based on the features giving.
 
 
 ## Decision tree is a method for prediction based on the metaphore of a tree explain how this tree is build. [18]
+
+lets take an example you have to find out if bottle is beer or wine.
+
+Color|alc%|cl|
+-----|----|--|
+red | 13|500|
+gold |4|500
+gold |0| 330
+white | 14 | 500
+
+We start at the root of the tree, it considers all the features and it would have learned during training,that if the color is red, its a wine. So it makes a branch to the left which ends in a leaf of wine. we now have the following left:
+Color|alc%|cl|
+-----|----|--|
+gold |4|500
+gold |0| 330
+white | 14 | 500
+It might look at cl now and determined that anything under 500 is a beer so it creates another left leaf node and places a beer there.
+Color|alc%|cl|
+-----|----|--|
+gold |4|500
+white | 14 | 500
+It knows a wine has no less than 12% alc, so it makes its final 2 leaf nodes and places the values respectively
