@@ -188,3 +188,13 @@ gold |4|500
 white | 14 | 500
 
 It knows a wine has no less than 12% alc, so it makes its final 2 leaf nodes and places the values respectively
+
+## Greedy algorithm makes the optimal choice at each step of building the	decision tree. What is considered optimal choice or best classifier by the	method? [19]
+
+
+
+## What is entropy? How to intepret low and high values? [20]
+Entropy is the so to say purity of the data in our dataset low is better than high. An example would be to image an empty room. We now pour 2 different kinds of gasses into the room, to begin with the gasses stay in each cornor of the room without mixing and are clearly distinctionable between eachother, hence we have low entropy. As time goes the gas mixes and in the end we wont be able to tell which particle is from which gas, hence we have high entropy.
+
+![](./img/entropy_gases_example.png)
+
