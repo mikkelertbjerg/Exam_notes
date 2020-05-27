@@ -128,3 +128,33 @@ An example: A movie with genre g, and run time r, actors a1, a2, a3, a4, a5 and 
 There are quite a few options:
 One could look for a new and more sufficient dataset.
 It would also be possible to generate more 'fake' data yourself, there are algorithms available to do so.
+
+## What is a scatter plot [13]
+
+A scatter plot is a graph that illustrate the relationship between two values. The position of a each dot on the x and y axis represents a pattern and an overall correlation in our dataset.
+
+![](./img/scatter-plot-example-1.png)
+
+A Scatter plot is primarily used to observe the pattern when between two numeric values.
+We can use it in AI/ML to indicate whether a dataset is suitable to an algorithm. The above example there is a clear distinction between height and diameter, which indicates that we could train an AI on this dataset.
+
+## Model Bias and lack of variance [14]
+
+If you were to train an AI to predict the genre of a movie based on the summery, and your dataset consist 70% of action movies and the remaining 30% is scattered out on 13 different genres. The AI has a Bias towards action movies, due to the lack of variation. Like wise if our dataset is balanced but we only had 5 genres, odds are we are gonna run into words in summeries that our AI dont know.
+
+## What is the difference between a method and a model? [15]
+
+
+
+
+
+## Which machine learning libraries and frameworks are you familiar with and which functions do they provide? [16]
+
+
+
+
+## Compare classification and regression, give examples of appropiate cases for both [17]
+
+
+
+## Decision tree is a method for prediction based on the metaphore of a tree explain how this tree is build. [18]
