@@ -208,3 +208,66 @@ i dont understand the question, i mean:
 x = {1,4,3,5,2}
 f(x) = x*2+1 such that 
 f(x) = y{3,9,7,11,5}
+
+i fail to see how to apply regression to this?
+
+## which method is based on probabilities, is it supervised, explain the logic [23]
+We are talking about naive Bays.
+
+naive bayes is a supervised method, typically used in NLP.
+NB has a formula like so :
+P(A|B) = P(B|A)P(A)/P(B) 
+in text: WE can find the probability of A happening, given that B has occurred. 
+
+## if you program a robot that has to sort out big potatoes from small ones, which method would you use. [24]
+I would use a DT/RF due to the efficiency and the fact that our features would more than likely be related to each other, that is to say if you have a large diameter and a large height, the weight would be big compared to the opposite.
+
+## What is clustering in machine learning? Name some methods for clustering and how they differ. [25]
+
+K-means is an algorithm that tries to find the pre-determined amount of clusters in a dataset, by calculating the euclidean distance between the points, the euclidean distance on a 2d graph is just pythagoros. The algorithm will choose x amount of random points based on how many clusters you wish for; these random points now acts as temp clusters. The AI then takes each point in the dataset and calculates the closes temp cluster and assign them to it, once its done this for all of them, it finds the mean distance in each cluster and starts over with that point being the new cluster starting point. Once this is done its done and saves the result. It will iterate over this how ever many times you have declared, in the end it returns the result with the least varience.
+
+Hierarchical clustering
+
+HC works by treating all points a cluster and then repeats the following steps: 
+1. identify 2 clusters that are closest together
+2. merge the two most similiar clusters.
+
+the main output of HC is a dendrogram
+![](./img/dendrogram.png)
+
+## How would you test the validity of the model you have created, if the accuracy of a model is not good enough what would you improve? [26]
+
+We test the validity of our model with the training data we have available after the initial split, we might even test it with futher real life data after the training is done. usually you would split the data at either 70-30 oR 80-20 depending on the type of model you are training and the size of the dataset.
+
+When the model is trained we can assert the accuracy with various scores, amongst them is an accuracy score and a confusion model.
+
+## GIGO is one the most important metaphoric principles in machine learning. What is it associated with? [27]
+Garbage in Garbage out,
+In short a model is only as good as the data it has been trained on, if we only train our model on well constructed data and we recieved sloppy data we will recieve garbage outputs.
+
+We can combat this by allowing sloppy training data in our training set, such that the model will have seen such examples before.
+
+## What is clean data and bad data? give examples and how to improve bad data [28]
+Bad data is when the data we are provided is missing colums or the data present is poorly formated or in someother way is damaged. We can clean the data by writing code that fixes broken data or cleans it up, say we have dataset of documents, some of these documents might have been scrapped from the web and done so poorly so they contain special chars, we can clean this by running all our documents through a regex expression.
+
+## If the training data set contains missing values, can it still be used would you modify data and if yes how? [29]
+
+In some cases, we can straight up remove the rows with missing data, given that dataset is large enough and we deem the missing data not vital to the model, afterall it had missing data that we wont be getting back. 
+
+If having missing data at some places in dataset, might be a real usecase, simply replacing the null values with numpy nan's. 
+or if its a numeric values it might be sutiable to take the mean of the value and replace the null with that.
+
+In the end it depends on the dataset and the purpose of the model.
+
+mode importation means that we take the most frequent catagory value and replace the null with that.
+
+## If there are too many features of objects availablehow would you decide which are more valuable than others. [30]
+
+1. Univariate Selection
+Statistical tests can be used to select those features that have the strongest relationship with the output variable.
+The scikit-learn library provides the SelectKBest class that can be used with a suite of different statistical tests to select a specific number of features.
+
+2. Feature Importance
+You can get the feature importance of each feature of your dataset by using the feature importance property of the model.
+Feature importance gives you a score for each feature of your data, the higher the score more important or relevant is the feature towards your output variable.
+Feature importance is an inbuilt class that comes with Tree Based Classifiers, we will be using Extra Tree Classifier for extracting the top 10 features for the dataset.
