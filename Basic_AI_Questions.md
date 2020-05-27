@@ -198,3 +198,13 @@ Entropy is the so to say purity of the data in our dataset low is better than hi
 
 ![](./img/entropy_gases_example.png)
 
+## When is a decision tree not good to use [21]
+A decision tree works when the labels have corrolation with each other. If they arent related the decision tree will perform badly, as DT works by finding the interaction between variables
+
+Another is with datafragmentation, a decision tree cant make a decision with data it has never seen before, so DT in nlp would most likely consist of a high varience because it will most likely encounter words it hasnt seen before and therefore dont know.
+
+## i dont even ?????????? [22]
+i dont understand the question, i mean:
+x = {1,4,3,5,2}
+f(x) = x*2+1 such that 
+f(x) = y{3,9,7,11,5}
