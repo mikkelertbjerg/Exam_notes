@@ -179,9 +179,12 @@ Color|alc%|cl|
 gold |4|500
 gold |0| 330
 white | 14 | 500
+
 It might look at cl now and determined that anything under 500 is a beer so it creates another left leaf node and places a beer there.
+
 Color|alc%|cl|
 -----|----|--|
 gold |4|500
 white | 14 | 500
+
 It knows a wine has no less than 12% alc, so it makes its final 2 leaf nodes and places the values respectively
