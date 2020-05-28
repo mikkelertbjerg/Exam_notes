@@ -394,6 +394,7 @@ Backpropagation is a method to adjust the connection weights to compensate for e
 [Back to overview](#overview)
 
 ## <a name="36"></a>What	is	an	activation	function,	how	does	it	affect	the	work	of	a	neuron?	Which	are	the	most	common	functions	used	as	activation	functions? [36]
+Sigmoid, creates weighted sums for our neurons close to zero. An example is the project where we used a ANN to figure out what handwritten digits was shown. Sigmoid was used to get the neuron weights between 0-1, based on the white color on the picutre. Where black would be 0.0, and white would be 1.0.
 
 [Back to overview](#overview)
 
