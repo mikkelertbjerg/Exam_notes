@@ -203,7 +203,7 @@ A decision tree works when the labels have corrolation with each other. If they 
 
 Another is with datafragmentation, a decision tree cant make a decision with data it has never seen before, so DT in nlp would most likely consist of a high varience because it will most likely encounter words it hasnt seen before and therefore dont know.
 
-## i dont even ?????????? [22]
+## In	Regression,	we	search	for	a	function	that	best	represents	the	relation	between	the	input	and	the	output.	If	the	input	sequence	is,	for	example,	x	=	{1,	4,	3,	5,	2},	and	the	output	sequence	is	y	=	{3, 9,	7,	11,	5},	which	function	would	be	appropriate? [22]
 i dont understand the question, i mean:
 x = {1,4,3,5,2}
 f(x) = x*2+1 such that 
@@ -259,7 +259,7 @@ or if its a numeric values it might be sutiable to take the mean of the value an
 
 In the end it depends on the dataset and the purpose of the model.
 
-mode importation means that we take the most frequent catagory value and replace the null with that.
+Mode imputation means that we take the most frequent catagory value and replace the null with that.
 
 ## If there are too many features of objects availablehow would you decide which are more valuable than others. [30]
 
@@ -271,3 +271,47 @@ The scikit-learn library provides the SelectKBest class that can be used with a 
 You can get the feature importance of each feature of your dataset by using the feature importance property of the model.
 Feature importance gives you a score for each feature of your data, the higher the score more important or relevant is the feature towards your output variable.
 Feature importance is an inbuilt class that comes with Tree Based Classifiers, we will be using Extra Tree Classifier for extracting the top 10 features for the dataset.
+
+## How	do	we	measure	the	quality	of	a	model? [31]
+We measure the quality of a model by using the accuracy and consistency from the output of the model.
+
+## What	is	cross-validation	and	in	which	cases	it	is recommended for use? [32]
+K*Fold cross validation
+Takes a dataset and shuffles it. Then splits it by K, an example could be a 2-fold crossvalidation.
+This way it would split up a dataset by 2, meaning we would have dataset1 and dataset2. We would then use dataset1 for training and dataset2 for validation.
+
+We could apply this to a simple example (Potato example)
+
+## Neural	Network	is	a	metaphor	from	neurology	used	in	machine learning.	How	does	a	neuron	relate	to	a	model?	Draw	a	sketch	to	illustrate	your	meaning. [33]
+![](./img/neuron-model.jpg)
+
+## What	is	the	difference	between	perceptron and	deep	neural	network?	Do	you	get	better results	by	using	deep	neural	network,	compared	to	other	methods?	Why?[34]
+Perceptron models are contained within the set of neural net models.
+
+A (single layer) perceptron is a single layer neural network that works as a linear binary classifier. Being a single layer neural network it can be trained without the use of more advanced algorithms like back propagation and instead can be trained by "stepping towards" your error in steps specified by a learning rate
+
+## Explain	the	back	propagation	of	errors	in	an	artificial	neural network.	[35]
+Backpropagation is a method to adjust the connection weights to compensate for each error found during learning.
+
+## What	is	an	activation	function,	how	does	it	affect	the	work	of	a	neuron?	Which	are	the	most	common	functions	used	as	activation	functions? [36]
+
+## What	is	a	convolutional	neural	network?		What	kind	of	tasks is	it	good	for	solving? How	does	it	differ	from	any	other	type	of	ANN? [37]
+Convolutional neural network is a class of deep neural networks, most commonly applied to analyzing visual imagery. The name “convolutional neural network” indicates that the network employs a mathematical operation called convolution. Convolution is a specialized kind of linear operation. Convolutional networks are simply neural networks that use convolution in place of general matrix multiplication in at least one of their layers
+We used it in class for coloured images recognition to test it with CIFAR cats & dogs data.
+
+## Are	you	familiar	with	any	technique,	used	in	processing	text	in	natural	language?	Which? [38]
+One-hot encoding, makes text into numbers. This way we turn text into numbers so the AI is crunching numbers rather than words.
+
+## How	does	a	recommender	system	work?	Explain	some	of	the	approaches,	used	for	generating	recommendations	by	AI	instruments. [39]
+You can create a recommender system in different ways. We have previously used cosine-based similarity when creating a movie recommender system where we recommended a movie based of the titles. This way we fed the algorithm with a title and it would return the similar titles.
+
+## What	is	TensorFlow?	Where	does	it	get	its	name	from?	Which	are	its	application	areas? What	is	Keras?	How	do TensorFlow	and Keras	contribute	to	the	AI	development	process? [40]
+TensorFlow is Google's open source machine learning platform. 
+
+Keras is TensorFlow's high-level API for building and training deep learning models. It contributes by being
+* User-friendly  
+*Keras has a simple, consistent interface optimized for common use cases. It provides clear and actionable feedback for user errors.*
+* Modular and Composeable  
+*Keras models are made by connecting configurable building blocks together, with few restrictions.*
+* Easy to extend  
+*Write custom building blocks to express new ideas for research. Create new layers, metrics, loss functions, and develop state-of-the-art models.*
