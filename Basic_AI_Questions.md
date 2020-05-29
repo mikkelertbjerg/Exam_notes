@@ -69,7 +69,7 @@ Relating that to sowftware:
 Keystrokes, recieving network packets, cameras, bluetooth, etc. would be sensors that it can act upon by displaying content, sending network packets, writing files based on that input.
 
 It can be illustrated the following way:
-![what_is_an_agent](./img/what_is_an_agent.png)
+![what_is_an_agent](https://github.com/mikkelertbjerg/Exam_notes/blob/master/img/ML_process.svg)
 
 [Back to overview](#overview)
 
@@ -130,7 +130,7 @@ by	implementing	machine learning methods? Draw	a	simple	sequence	diagram.
 </ol>
 
 I've attempted to illustrate this process with a sequence diagram. That's to say, we don't nesscecarily go through all the steps in the diagram in this particular sequence. But it's ment to fit above described flow
-![ML_process](./img/ML_process.svg)
+![ML_process](https://github.com/mikkelertbjerg/Exam_notes/blob/master/img/ML_process.svg)
 
 [Back to overview](#overview)
 
@@ -165,7 +165,7 @@ In order to draw a normal distribution the following data is needed:
     <li>The standard deviation of the measurement</li>
 </ol>
 
-![Normal distribution](./img/Normal_Distribution.svg)
+![Normal distribution](https://github.com/mikkelertbjerg/Exam_notes/blob/master/img/Normal_Distribution.svg)
 
 [Back to overview](#overview)
 
@@ -193,7 +193,7 @@ It would also be possible to generate more 'fake' data yourself, there are algor
 
 A scatter plot is a graph that illustrate the relationship between two values. The position of a each dot on the x and y axis represents a pattern and an overall correlation in our dataset.
 
-![](./img/scatter-plot-example-1.png)
+![](https://github.com/mikkelertbjerg/Exam_notes/blob/master/img/scatter-plot-example-1.png)
 
 A Scatter plot is primarily used to observe the pattern when between two numeric values.
 We can use it in AI/ML to indicate whether a dataset is suitable to an algorithm. The above example there is a clear distinction between height and diameter, which indicates that we could train an AI on this dataset.
@@ -264,7 +264,7 @@ It knows a wine has no less than 12% alc, so it makes its final 2 leaf nodes and
 ## <a name="20"></a>What is entropy? How to intepret low and high values? [20]
 Entropy is the so to say purity of the data in our dataset low is better than high. An example would be to image an empty room. We now pour 2 different kinds of gasses into the room, to begin with the gasses stay in each cornor of the room without mixing and are clearly distinctionable between eachother, hence we have low entropy. As time goes the gas mixes and in the end we wont be able to tell which particle is from which gas, hence we have high entropy.
 
-![](./img/entropy_gases_example.png)
+![](https://github.com/mikkelertbjerg/Exam_notes/blob/master/img/entropy_gases_example.png)
 
 [Back to overview](#overview)
 
@@ -311,7 +311,7 @@ HC works by treating all points a cluster and then repeats the following steps:
 2. merge the two most similiar clusters.
 
 the main output of HC is a dendrogram
-![](./img/dendrogram.png)
+![](https://github.com/mikkelertbjerg/Exam_notes/blob/master/img/dendrogram.png)
 
 [Back to overview](#overview)
 
