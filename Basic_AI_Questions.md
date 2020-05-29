@@ -69,7 +69,7 @@ Relating that to sowftware:
 Keystrokes, recieving network packets, cameras, bluetooth, etc. would be sensors that it can act upon by displaying content, sending network packets, writing files based on that input.
 
 It can be illustrated the following way:
-![what_is_an_agent](https://github.com/mikkelertbjerg/Exam_notes/blob/master/img/ML_process.svg)
+![what_is_an_agent](https://github.com/mikkelertbjerg/Exam_notes/blob/master/img/What_is_an_agent.png)
 
 [Back to overview](#overview)
 
