@@ -204,6 +204,11 @@ We can use it in AI/ML to indicate whether a dataset is suitable to an algorithm
 
 If you were to train an AI to predict the genre of a movie based on the summery, and your dataset consist 70% of action movies and the remaining 30% is scattered out on 13 different genres. The AI has a Bias towards action movies, due to the lack of variation. Like wise if our dataset is balanced but we only had 5 genres, odds are we are gonna run into words in summeries that our AI dont know.
 
+--
+
+<i>Mikkels</i>
+When fitting data to a training and data set. Creating a line in a scatter plot, trying to explain the relationship between the x and y axis. If the line is straight, the distance from each plot in the training set to the line is the bias. Where as the distance between the plots in the training and the initially fitted line is the variance.
+
 [Back to overview](#overview)
 
 ## <a name="15"></a>What is the difference between a method and a model? [15]
